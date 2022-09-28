@@ -46,7 +46,7 @@ puts word_decoder('-- -.--', code_morse)
 def decode_message(message)
   message.split('  ').map { |word| word_decoder(morse_word) }.join(' ')
 end
-puts decode_message(.. .- -- . -.-- .- ... ..-)
+puts decode_message('.. .- -- . -.-- .- ... ..-')
 
 ## 0. create an empty string
 ## 1. split string into array by 3 spaces
