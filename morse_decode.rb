@@ -18,6 +18,13 @@ end
 
 # Create a method to decode an entire word in Morse code, takes a string parameter, and return the string representation. Every character in a word will be separated by a single space (e.g. decode_word("-- -.--") returns "MY").  
 # word_decoder
+
+## inside the method
+## 0. create an empty string "word"
+## 1. split string into arrays by 1 space
+## 2. iterate over the array 
+## 3. for each item, fill the word string with the char_decoder returned value
+## 5. return the string
 def word_decoder(morse_word, code)
   new_word = ""
   arr = morse_word.split()
@@ -26,12 +33,6 @@ def word_decoder(morse_word, code)
 end
 
 puts word_decoder( "-- -.--",code_morse)
-## inside the method
-## 0. create an empty string "word"
-## 1. split string into arrays by 1 space
-## 2. iterate over the array 
-## 3. for each item, fill the word string with the char_decoder returned value
-## 5. return the string
 
 # Create a method to decode the entire message in Morse code, takes a string parameter, and return the string representation. Every word will be separated by 3 spaces (e.g.)
 # string_decoder
