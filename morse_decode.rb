@@ -43,10 +43,10 @@ puts word_decoder('-- -.--', code_morse)
 # takes a string parameter, and return the string representation.
 # Every word will be separated by 3 spaces (e.g.)
 # string_decoder
-def decode_message(message)
-  message.split('  ').map { |morse_word| word_decoder(morse_word) }.join(' ')
+def decode_message(message, code_morse)
+  message.split('  ').map { |morse_word| word_decoder(morse_word, code_morse) }.join(' ')
 end
-puts decode_message('.. .- -- . -.-- .- ... ..-')
+puts decode_message('.. .- -- . -.-- .- ... ..-', code_morse)
 
 ## 0. create an empty string
 ## 1. split string into array by 3 spaces
